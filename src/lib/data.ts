@@ -1,3 +1,9 @@
+import toolboxImg from '../assets/img/toolbox_home.png';
+import cfvpraxisImg from '../assets/img/CFVPraxis_elearning_home.png';
+import arcorImg from '../assets/img/arcor_home.png';
+import saphirusImg from '../assets/img/saphirus_home.png';
+import dashboardImg from '../assets/img/dashboard_aec_home.png';
+
 export interface Project {
   id: string;
   name: string;
@@ -9,6 +15,9 @@ export interface Project {
   image?: string;
   repo: string;
   demo?: string;
+}
+
+export interface Testimonial {
 }
 
 export interface Testimonial {
@@ -91,12 +100,12 @@ export const skills = [
     items: ['WordPress', 'WooCommerce', 'Plugins a medida', 'Tutor LMS', 'Pagos online', 'Alto tráfico'],
   },
   {
-    category: 'DevOps',
-    items: ['AWS EC2', 'Amazon RDS', 'Docker', 'Nginx', 'Redis', 'PHP-FPM', 'Bash'],
-  },
-  {
     category: 'Integraciones',
     items: ['APIs REST', 'SOAP', 'Webhooks', 'Swagger', 'Postman', 'n8n', 'SendGrid'],
+  },
+  {
+    category: 'Inteligencia Artificial',
+    items: ['opencode', 'ChatGPT', 'Codex', 'Prompt Engineering', 'Testing automático con IA'],
   },
   {
     category: 'Inteligencia Artificial',
@@ -195,7 +204,7 @@ export const projects: Project[] = [
     stack: ['Laravel', 'Livewire', 'Blade', 'Webhooks', 'MySQL'],
     color: '#54D6FF',
     icon: 'box',
-    image: '/img/toolbox_home.png',
+    image: toolboxImg.src,
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -208,7 +217,7 @@ export const projects: Project[] = [
     stack: ['WordPress', 'WooCommerce', 'Theme custom', 'Plugins', 'PHP'],
     color: '#17A8E5',
     icon: 'cart',
-    image: '/img/CFVPraxis_elearning_home.png',
+    image: cfvpraxisImg.src,
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -221,7 +230,7 @@ export const projects: Project[] = [
     stack: ['WordPress', 'WooCommerce', 'Plugins a medida', 'PHP', 'Flujos de entrega'],
     color: '#17A8E5',
     icon: 'cart',
-    image: '/img/arcor_home.png',
+    image: arcorImg.src,
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -234,7 +243,7 @@ export const projects: Project[] = [
     stack: ['WordPress', 'WooCommerce', 'Plugins a medida', 'PHP', 'Debugging'],
     color: '#54D6FF',
     icon: 'plug',
-    image: '/img/saphirus_home.png',
+    image: saphirusImg.src,
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -259,7 +268,7 @@ export const projects: Project[] = [
     stack: ['React', 'Material UI', 'Laravel', 'Swagger', 'MySQL'],
     color: '#17A8E5',
     icon: 'chart',
-    image: '/img/dashboard_aec_home.png',
+    image: dashboardImg.src,
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
