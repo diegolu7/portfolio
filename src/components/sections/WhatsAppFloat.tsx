@@ -14,7 +14,7 @@ export default function WhatsAppFloat() {
       className="group fixed bottom-6 right-6 z-40 flex items-center gap-3"
     >
       <span className="pointer-events-none hidden rounded-[10px] border border-primary/30 bg-midnight-secondary/95 px-4 py-2.5 text-sm font-medium text-text-light opacity-100 shadow-lg backdrop-blur-[8px] transition-opacity duration-300 sm:block group-hover:opacity-100">
-        Resolver mis dudas, contactame
+        Escríbenos por WhatsApp
       </span>
 
       <span className="relative flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-transform duration-200 hover:scale-110">
