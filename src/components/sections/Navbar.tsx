@@ -10,7 +10,6 @@ const links = [
   { id: 'proyectos', label: 'Proyectos' },
   { id: 'servicios', label: 'Servicios' },
   { id: 'testimonios', label: 'Testimonios' },
-  { id: 'contacto', label: 'Contacto' },
 ];
 
 export default function Navbar() {
