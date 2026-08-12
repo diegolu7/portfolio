@@ -1,7 +1,7 @@
 import Reveal from '../ui/Reveal';
 import Icon from '../ui/Icon';
 import SectionHeading from '../ui/SectionHeading';
-import { profile, skills, stats } from '../../lib/data';
+import { education, profile, skills, stats } from '../../lib/data';
 
 export default function About() {
   return (
@@ -23,9 +23,10 @@ export default function About() {
                 e-commerce, plataformas educativas, dashboards e integraciones API.
               </p>
               <p className="mt-4 leading-relaxed text-text-muted">
-                Me apasiona aplicar <span className="text-primary-light">Clean Architecture</span> y
-                buenas prácticas para que cada línea de código sume valor real: rendimiento,
-                mantenibilidad y resultados medibles.
+                Hoy me desempeño como FullStack en <span className="text-primary-light">CFV Praxis</span>,
+                sobre productos Laravel/WordPress en AWS. Aplico hearth concepts como{' '}
+                <span className="text-primary-light">Clean Architecture</span> y buenas prácticas para que
+                cada línea de código sume valor real: rendimiento, mantenibilidad y resultados medibles.
               </p>
 
               <div className="mt-8 grid gap-4">
@@ -49,8 +50,10 @@ export default function About() {
                   <div>
                     <p className="font-semibold text-text-light">Educación</p>
                     <ul className="mt-1 space-y-1 text-sm text-text-muted">
-                      {profile.education.map((e) => (
-                        <li key={e}>• {e}</li>
+                      {education.map((e) => (
+                        <li key={`${e.title}-${e.issuer}`}>
+                          • {e.title} — {e.issuer} ({e.year})
+                        </li>
                       ))}
                     </ul>
                   </div>

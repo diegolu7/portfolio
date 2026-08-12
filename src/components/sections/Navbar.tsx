@@ -5,6 +5,8 @@ import Icon from '../ui/Icon';
 const links = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'sobre-mi', label: 'Sobre mí' },
+  { id: 'experiencia', label: 'Experiencia' },
+  { id: 'formacion', label: 'Formación' },
   { id: 'proyectos', label: 'Proyectos' },
   { id: 'servicios', label: 'Servicios' },
   { id: 'testimonios', label: 'Testimonios' },

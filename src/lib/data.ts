@@ -30,6 +30,25 @@ export interface Service {
   items: string[];
 }
 
+export interface ExperienceEntry {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  current?: boolean;
+  summary: string;
+  highlights: string[];
+  stack: string[];
+  icon: string;
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  year: string;
+}
+
 export const profile = {
   name: 'Diego Luis Castro',
   title: 'Desarrollador Web FullStack',
@@ -61,28 +80,109 @@ export const stats = [
 export const skills = [
   {
     category: 'Backend',
-    items: ['PHP', 'Laravel', 'Livewire', 'Blade', 'MySQL', 'REST APIs'],
+    items: ['PHP 8.3', 'Laravel 12', 'Livewire', 'Blade', 'Node.js', 'MySQL', 'REST APIs'],
   },
   {
     category: 'Frontend',
-    items: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Astro'],
+    items: ['React.js', 'TypeScript', 'Material UI', 'jQuery', 'Tailwind CSS', 'Astro'],
   },
   {
     category: 'E-commerce',
-    items: ['WordPress', 'WooCommerce', 'Plugins a medida', 'Optimización', 'Alto tráfico'],
+    items: ['WordPress', 'WooCommerce', 'Plugins a medida', 'Tutor LMS', 'Pagos online', 'Alto tráfico'],
   },
   {
     category: 'DevOps',
-    items: ['AWS', 'Docker', 'Nginx', 'CI/CD', 'Metabase'],
+    items: ['AWS EC2', 'Amazon RDS', 'Docker', 'Nginx', 'Redis', 'PHP-FPM', 'Bash'],
+  },
+  {
+    category: 'Integraciones',
+    items: ['APIs REST', 'SOAP', 'Webhooks', 'Swagger', 'Postman', 'n8n', 'SendGrid'],
   },
   {
     category: 'Inteligencia Artificial',
-    items: ['opencode', 'ChatGPT', 'Codex', 'Testing automático con IA'],
+    items: ['opencode', 'ChatGPT', 'Codex', 'Prompt Engineering', 'Testing automático con IA'],
   },
   {
-    category: 'Especialidades',
-    items: ['E-commerce', 'Plataformas educativas', 'Dashboards', 'Integraciones API'],
+    category: 'Metodologías',
+    items: ['Agile', 'Scrum', 'Clean Architecture', 'Clean Code', 'QA', 'Troubleshooting'],
   },
+];
+
+export const experience: ExperienceEntry[] = [
+  {
+    id: 'cfvpraxis',
+    role: 'Desarrollador FullStack PHP / WordPress / Laravel',
+    company: 'CFV Praxis',
+    period: 'Mar 2026 — Actualidad',
+    location: 'Remoto · Salta, Argentina',
+    current: true,
+    summary:
+      'Desarrollo y mantenimiento de soluciones web para entornos educativos, comerciales y corporativos sobre AWS.',
+    highlights: [
+      'ToolBox V3: app empresarial Laravel 12 + Livewire con arquitectura modular, KPIs, roles y permisos, desplegada en AWS EC2/RDS.',
+      'Integración de sitio comercial (WooCommerce) con campus educativo (Tutor LMS): inscripción automática, sync de usuarios y acceso por tokens de único uso.',
+      'Infraestructura, troubleshooting, pagos (Payway/Mercado Pago) y mejoras UX/UI en dashboards administrativos.',
+    ],
+    stack: ['Laravel 12', 'PHP 8.3', 'WordPress', 'WooCommerce', 'Tutor LMS', 'Livewire', 'AWS', 'Nginx', 'Redis'],
+    icon: 'graduation',
+  },
+  {
+    id: 'minimalart',
+    role: 'Developer / FullStack Developer',
+    company: 'Minimalart',
+    period: 'Ago 2022 — Ago 2025',
+    location: 'Remoto · Salta / CABA',
+    summary:
+      'Desarrollo y mantenimiento de soluciones para marcas como Arcor en Casa, Saphirus, Issuecolor y DirectConnectionTravel.',
+    highlights: [
+      'Arcor en Casa: e-commerce de alto tráfico en WordPress/WooCommerce con plugins a medida, optimización de performance y mantenimiento evolutivo.',
+      'Dashboard legacy de ventas: frontend React + Material UI con backend Laravel y API documentada en Swagger.',
+      'Saphirus: plugins custom, integraciones y resolución de bugs críticos del e-commerce.',
+    ],
+    stack: ['PHP', 'WordPress', 'WooCommerce', 'Laravel', 'React', 'Material UI', 'MySQL', 'API REST'],
+    icon: 'briefcase',
+  },
+  {
+    id: 'freelance',
+    role: 'Desarrollador FullStack Freelance',
+    company: 'Independiente',
+    period: 'Ene 2020 — Ago 2022',
+    location: 'Salta, Argentina',
+    summary:
+      'Desarrollo de soluciones web para clientes de distintos rubros con foco en e-commerce y presencia digital.',
+    highlights: [
+      'Landing pages, sitios institucionales y sitios adaptativos.',
+      'Tiendas online en WooCommerce con lógica de negocio y diseño responsive.',
+      'Gestión autónoma de proyectos y comunicación directa con clientes.',
+    ],
+    stack: ['PHP', 'WordPress', 'WooCommerce', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    icon: 'rocket',
+  },
+];
+
+export const education: Certification[] = [
+  { title: 'Tecnicatura en Programación', issuer: 'Instituto Teclab', year: 'En curso · a una materia de finalizar' },
+  { title: 'Licenciatura en Análisis de Sistemas', issuer: 'Universidad Nacional de Salta', year: 'En curso' },
+];
+
+export const certifications: Certification[] = [
+  { title: 'Docker para desarrolladores', issuer: 'DevTalles', year: '2026' },
+  { title: 'Prompt Engineering I', issuer: 'Founderz', year: '2026' },
+  { title: 'Estrategias de marketing y negocios digitales', issuer: 'UTN · FR Resistencia', year: '2026' },
+  { title: 'Actualización Profesional en Inteligencia Artificial', issuer: 'Teclab', year: '2025' },
+  { title: 'Metodologías Ágiles', issuer: 'Teclab', year: '2025' },
+  { title: 'Clean Code en JavaScript', issuer: 'Platzi', year: '2023' },
+  { title: 'Bases de Datos Relacionales', issuer: 'TodoCode', year: '2023' },
+  { title: 'Programación Full Stack', issuer: 'NUCBA', year: '2022' },
+  { title: 'Programación Backend', issuer: 'NUCBA', year: '2022' },
+  { title: 'Front End Avanzado', issuer: 'NUCBA', year: '2022' },
+  { title: 'Workshop E-commerce', issuer: 'Minimalart', year: '2022' },
+  { title: 'Workshop QA', issuer: 'Minimalart', year: '2022' },
+  { title: 'Programación en Java', issuer: 'Universidad Nacional de Salta', year: '2022' },
+  { title: 'SQL Server', issuer: 'EducaciónIT', year: '2021' },
+  { title: 'JavaScript', issuer: 'CourseIt', year: '2019' },
+  { title: 'Desarrollo Web', issuer: 'CourseIt', year: '2018' },
+  { title: 'Linux', issuer: 'EducaciónIT', year: '2018' },
 ];
 
 export const projects: Project[] = [
