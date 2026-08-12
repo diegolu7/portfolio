@@ -31,9 +31,18 @@ export default function Projects() {
                     background: `radial-gradient(circle at center, ${p.color}26 0%, rgba(8,17,31,0) 70%)`,
                   }}
                 >
-                  <span className="icon-circle !h-14 !w-14 transition-transform duration-300 group-hover:scale-110">
-                    <Icon name={p.icon as never} className="h-7 w-7" strokeWidth={1.6} />
-                  </span>
+                  {p.image ? (
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                    />
+                  ) : (
+                    <span className="icon-circle !h-14 !w-14 transition-transform duration-300 group-hover:scale-110">
+                      <Icon name={p.icon as never} className="h-7 w-7" strokeWidth={1.6} />
+                    </span>
+                  )}
                   <span
                     className="absolute right-4 top-4 flex items-center gap-1 rounded-full border px-3 py-1 text-xs font-semibold text-text-light backdrop-blur-sm transition-transform group-hover:scale-105"
                     style={{ borderColor: `${p.color}66`, background: 'rgba(16,28,46,0.85)' }}
@@ -66,14 +75,22 @@ export default function Projects() {
         {selected && (
           <div className="p-6 sm:p-8">
             <div
-              className="mb-6 flex aspect-[16/9] items-center justify-center rounded-[12px]"
+              className="relative mb-6 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-[12px]"
               style={{
                 background: `radial-gradient(circle at center, ${selected.color}26 0%, rgba(8,17,31,0) 70%)`,
               }}
             >
-              <span className="icon-circle !h-16 !w-16">
-                <Icon name={selected.icon as never} className="h-8 w-8" strokeWidth={1.5} />
-              </span>
+              {selected.image ? (
+                <img
+                  src={selected.image}
+                  alt={selected.name}
+                  className="absolute inset-0 h-full w-full object-cover object-top"
+                />
+              ) : (
+                <span className="icon-circle !h-16 !w-16">
+                  <Icon name={selected.icon as never} className="h-8 w-8" strokeWidth={1.5} />
+                </span>
+              )}
             </div>
 
             <h3 className="text-2xl font-bold text-text-light">{selected.name}</h3>

@@ -6,6 +6,7 @@ export interface Project {
   stack: string[];
   color: string;
   icon: string;
+  image?: string;
   repo: string;
   demo?: string;
 }
@@ -94,6 +95,20 @@ export const projects: Project[] = [
     stack: ['Laravel', 'Livewire', 'Blade', 'Clean Architecture', 'MySQL'],
     color: '#54D6FF',
     icon: 'box',
+    image: '/img/toolbox_home.png',
+    repo: 'https://github.com/diegolu7',
+    demo: undefined,
+  },
+  {
+    id: 'cfvpraxis-elearning',
+    name: 'CFV Praxis E-learning',
+    tagline: 'Plataforma educativa online con cursos y seguimiento.',
+    description:
+      'Plataforma educativa de CFV Praxis para dictar cursos online. Gestión de contenidos, matrículas, seguimiento de progreso de alumnos e integraciones con el ecosistema de la organización.',
+    stack: ['Laravel', 'Livewire', 'Blade', 'MySQL', 'AWS'],
+    color: '#17A8E5',
+    icon: 'graduation',
+    image: '/img/CFVPraxis_elearning_home.png',
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -106,6 +121,7 @@ export const projects: Project[] = [
     stack: ['WordPress', 'WooCommerce', 'Performance', 'Alto tráfico', 'Nginx'],
     color: '#17A8E5',
     icon: 'cart',
+    image: '/img/arcor_home.png',
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -118,6 +134,7 @@ export const projects: Project[] = [
     stack: ['WordPress', 'WooCommerce', 'Plugins a medida', 'PHP', 'APIs REST'],
     color: '#54D6FF',
     icon: 'plug',
+    image: '/img/saphirus_home.png',
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
@@ -142,6 +159,7 @@ export const projects: Project[] = [
     stack: ['Laravel', 'React', 'MySQL', 'Metabase', 'Docker'],
     color: '#17A8E5',
     icon: 'chart',
+    image: '/img/dashboard_aec_home.png',
     repo: 'https://github.com/diegolu7',
     demo: undefined,
   },
