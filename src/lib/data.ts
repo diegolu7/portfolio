@@ -76,7 +76,7 @@ export const skills = [
   },
   {
     category: 'Inteligencia Artificial',
-    items: ['opencode', 'ChatGPT', 'Codex', 'Testia', 'Testing automático con IA'],
+    items: ['opencode', 'ChatGPT', 'Codex', 'Testing automático con IA'],
   },
   {
     category: 'Especialidades',
