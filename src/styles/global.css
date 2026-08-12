@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-midnight text-text-light font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-primary text-midnight;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-midnight;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-midnight-secondary;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8;
+  }
+  .section-padding {
+    @apply py-16;
+  }
+  .card {
+    @apply rounded-lg border border-white/10 bg-midnight-card shadow-md transition-all duration-300;
+  }
+  .card:hover {
+    @apply -translate-y-1 border-primary/40 shadow-cardHover;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-[10px] bg-primary px-7 py-3.5 font-semibold text-midnight shadow-[0_4px_14px_rgba(23,168,229,0.35)] transition-all duration-200 hover:scale-[1.02] hover:bg-primary-light;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-[10px] border-[1.5px] border-primary bg-transparent px-7 py-3.5 font-semibold text-primary transition-all duration-200 hover:scale-[1.02] hover:bg-primary/10;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-md border border-white/20 bg-midnight-secondary px-4 py-2 text-[13px] font-medium text-text-light transition-colors duration-200 hover:border-primary;
+  }
+  .section-title {
+    @apply text-2xl font-bold text-text-light;
+  }
+  .section-subtitle {
+    @apply text-primary-light;
+  }
+  .icon-circle {
+    @apply flex h-12 w-12 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary;
+  }
+}

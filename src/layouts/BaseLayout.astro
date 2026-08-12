@@ -1,0 +1,34 @@
+---
+import Navbar from '../components/sections/Navbar';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de Diego Luis Castro — Desarrollador Web FullStack especializado en e-commerce, plataformas educativas, dashboards e integraciones API." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Diego Luis Castro · Desarrollador Web FullStack</title>
+  </head>
+  <body class="bg-midnight">
+    <Navbar client:load />
+    <main>
+      <slot />
+    </main>
+    <footer class="border-t border-white/10 bg-midnight">
+      <div class="container-page flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
+        <p class="text-sm text-text-muted">
+          © {new Date().getFullYear()} Diego Luis Castro. Todos los derechos reservados.
+        </p>
+        <p class="text-sm text-text-muted">
+          Hecho con <span class="text-primary-light">Astro</span> · React · Tailwind
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

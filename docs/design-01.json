@@ -1,0 +1,302 @@
+{
+"meta": {
+"nombre_tema": "Midnight Cyan",
+"estilo": "Dark mode, tech/developer portfolio, minimalista con acentos cian",
+"paleta_base": {
+"fondo_principal": "#08111F",
+"fondo_secundario": "#101C2E",
+"texto_claro": "#F4F8FC",
+"texto_muted": "#9BAABD",
+"acento_primario": "#17A8E5",
+"acento_secundario": "#54D6FF"
+}
+},
+"colores": {
+"fondo": {
+"pagina": "#08111F",
+"header_nav": "#08111F",
+"seccion_alterna": "#08111F"
+},
+"tarjetas": {
+"fondo": "#0D1826",
+"fondo_hover": "#122234",
+"borde": "rgba(155, 170, 189, 0.15)",
+"borde_hover": "rgba(23, 168, 229, 0.5)",
+"sombra": "0 4px 12px rgba(0, 0, 0, 0.35)"
+},
+"botones": {
+"primario": {
+"fondo": "#17A8E5",
+"texto": "#08111F",
+"hover_fondo": "#54D6FF",
+"borderRadius": "8px"
+},
+"secundario": {
+"fondo": "transparent",
+"borde": "#17A8E5",
+"texto": "#17A8E5",
+"hover_fondo": "rgba(23, 168, 229, 0.1)",
+"borderRadius": "8px"
+}
+},
+"texto": {
+"titulo_principal": "#F4F8FC",
+"subtitulo_acento": "#54D6FF",
+"cuerpo": "#9BAABD",
+"cuerpo_secundario": "#7C8CA0",
+"enlace": "#17A8E5",
+"enlace_hover": "#54D6FF",
+"nav_activo": "#17A8E5",
+"nav_inactivo": "#F4F8FC"
+},
+"iconos": {
+"fondo_circular": "rgba(23, 168, 229, 0.12)",
+"color_icono": "#17A8E5",
+"color_icono_alt": "#54D6FF",
+"borde_contenedor": "rgba(23, 168, 229, 0.25)"
+},
+"badges_skills": {
+"fondo": "#101C2E",
+"borde": "rgba(155, 170, 189, 0.2)",
+"texto": "#F4F8FC",
+"hover_borde": "#17A8E5"
+},
+"divisores": "rgba(155, 170, 189, 0.12)"
+},
+"tipografia": {
+"familia_base": "'Inter', 'Segoe UI', system-ui, sans-serif",
+"nombre_header": {
+"font": "Inter",
+"size": "18px",
+"weight": 700,
+"letterSpacing": "0.5px",
+"color": "#F4F8FC"
+},
+"titulo_hero": {
+"font": "Inter",
+"size": "56px",
+"weight": 800,
+"lineHeight": "1.1",
+"color": "#F4F8FC"
+},
+"subtitulo_hero": {
+"font": "Inter",
+"size": "22px",
+"weight": 600,
+"lineHeight": "1.4",
+"color": "#54D6FF"
+},
+"parrafo": {
+"font": "Inter",
+"size": "16px",
+"weight": 400,
+"lineHeight": "1.6",
+"color": "#9BAABD"
+},
+"titulo_seccion": {
+"font": "Inter",
+"size": "24px",
+"weight": 700,
+"color": "#F4F8FC"
+},
+"titulo_tarjeta": {
+"font": "Inter",
+"size": "16px",
+"weight": 700,
+"color": "#F4F8FC"
+},
+"texto_tarjeta": {
+"font": "Inter",
+"size": "13px",
+"weight": 400,
+"lineHeight": "1.5",
+"color": "#9BAABD"
+},
+"etiqueta_badge": {
+"font": "Inter",
+"size": "13px",
+"weight": 500,
+"color": "#F4F8FC"
+},
+"fecha_meta": {
+"font": "Inter",
+"size": "12px",
+"weight": 500,
+"color": "#9BAABD"
+},
+"enlace_cta": {
+"font": "Inter",
+"size": "14px",
+"weight": 600,
+"color": "#17A8E5"
+}
+},
+"componentes": {
+"boton_primario": {
+"padding": "14px 28px",
+"borderRadius": "10px",
+"fondo": "#17A8E5",
+"texto": "#08111F",
+"fontWeight": 600,
+"iconoIzquierda": true,
+"sombra": "0 4px 14px rgba(23, 168, 229, 0.35)"
+},
+"boton_secundario": {
+"padding": "14px 28px",
+"borderRadius": "10px",
+"fondo": "transparent",
+"borde": "1.5px solid #17A8E5",
+"texto": "#17A8E5",
+"fontWeight": 600
+},
+"tarjeta_stat": {
+"padding": "20px",
+"borderRadius": "12px",
+"fondo": "#0D1826",
+"borde": "1px solid rgba(155,170,189,0.12)",
+"iconoTamaño": "20px",
+"gap_icono_texto": "12px"
+},
+"tarjeta_experiencia": {
+"padding": "24px",
+"borderRadius": "14px",
+"fondo": "#0D1826",
+"borde": "1px solid rgba(155,170,189,0.12)",
+"logo_size": "48px",
+"logo_borderRadius": "8px"
+},
+"tarjeta_proyecto": {
+"borderRadius": "14px",
+"fondo": "#0D1826",
+"imagen_aspect_ratio": "16:9",
+"imagen_borderRadius": "14px 14px 0 0",
+"padding_contenido": "18px",
+"sombra_hover": "0 8px 24px rgba(23,168,229,0.15)"
+},
+"badge_skill": {
+"padding": "8px 16px",
+"borderRadius": "8px",
+"fondo": "#101C2E",
+"borde": "1px solid rgba(155,170,189,0.2)",
+"display": "inline-flex",
+"gap_entre_badges": "10px"
+},
+"nav_link": {
+"padding": "8px 4px",
+"indicador_activo": "2px solid #17A8E5 (underline)",
+"hover_color": "#54D6FF",
+"transition": "color 200ms ease"
+},
+"icono_flotante_hero": {
+"fondo": "rgba(16,28,46,0.85)",
+"borderRadius": "16px",
+"border": "1px solid rgba(23,168,229,0.3)",
+"padding": "14px",
+"sombra": "0 8px 20px rgba(0,0,0,0.4)",
+"backdropFilter": "blur(8px)"
+},
+"toggle_tema": {
+"size": "36px",
+"borderRadius": "50%",
+"fondo": "#101C2E",
+"borde": "1px solid rgba(155,170,189,0.2)",
+"icono": "#F4F8FC"
+},
+"footer_contacto": {
+"borderRadius": "16px",
+"fondo": "#0D1826",
+"borde": "1px solid rgba(155,170,189,0.12)",
+"padding": "32px"
+}
+},
+"efectos": {
+"sombras": {
+"sm": "0 2px 6px rgba(0,0,0,0.25)",
+"md": "0 4px 12px rgba(0,0,0,0.35)",
+"lg": "0 8px 24px rgba(0,0,0,0.45)",
+"glow_cian": "0 0 24px rgba(23,168,229,0.25)"
+},
+"borderRadius": {
+"sm": "6px",
+"md": "10px",
+"lg": "14px",
+"xl": "20px",
+"circular": "50%"
+},
+"hover": {
+"tarjeta": {
+"transform": "translateY(-4px)",
+"transition": "all 250ms ease-out",
+"sombra": "0 8px 24px rgba(23,168,229,0.15)",
+"borde": "rgba(23,168,229,0.4)"
+},
+"boton": {
+"transform": "scale(1.02)",
+"transition": "all 200ms ease"
+},
+"enlace": {
+"color": "#54D6FF",
+"transition": "color 200ms ease"
+}
+},
+"gradientes": {
+"fondo_hero_imagen": "radial-gradient(circle at center, rgba(23,168,229,0.15) 0%, rgba(8,17,31,0) 70%)",
+"linea_nav_activa": "linear-gradient(90deg, #17A8E5, #54D6FF)"
+}
+},
+"espaciado": {
+"contenedor_maximo": "1200px",
+"padding_lateral_pagina": "40px",
+"seccion_padding_vertical": "64px",
+"grid_stats": {
+"columnas": 5,
+"gap": "16px"
+},
+"grid_experiencia": {
+"columnas": 3,
+"gap": "20px"
+},
+"grid_proyectos": {
+"columnas": 3,
+"gap": "24px"
+},
+"grid_skills_categorias": {
+"columnas": 5,
+"gap": "24px",
+"gap_badges_interno": "8px"
+},
+"gap_titulo_subtitulo": "12px",
+"gap_botones_hero": "16px",
+"margen_seccion": "48px 0"
+},
+"layout": {
+"header": {
+"altura": "70px",
+"posicion": "sticky top",
+"fondo": "#08111F",
+"borde_inferior": "1px solid rgba(155,170,189,0.1)",
+"distribucion": "logo | nav-center | toggle-tema"
+},
+"hero": {
+"distribucion": "texto-izquierda 55% / imagen-derecha 45%",
+"alineacion_texto": "left",
+"imagen_con_iconos_flotantes": true
+},
+"responsive": {
+"breakpoint_tablet": "768px",
+"breakpoint_mobile": "480px",
+"comportamiento_grid": "colapsa a 1-2 columnas en mobile",
+"comportamiento_hero": "imagen debajo del texto en mobile"
+}
+},
+"restricciones": [
+"No aplicar sombra de tarjeta a elementos de texto suelto",
+"No usar el color de botón primario (#17A8E5) como fondo de tarjeta completo, solo como acento o borde",
+"Mantener siempre alto contraste: texto sobre fondo oscuro debe ser #F4F8FC o #9BAABD, nunca colores oscuros",
+"Los iconos dentro de círculos deben usar fondo translúcido (opacidad 10-15%), nunca sólido",
+"No mezclar bordes redondeados: usar 8-10px en botones/badges y 12-14px en tarjetas contenedoras, no combinar aleatoriamente",
+"Los gradientes cian son decorativos (glow/blur), no deben usarse como fondo sólido de bloques grandes",
+"El texto secundario (#9BAABD) nunca debe superponerse directamente sobre imágenes sin overlay oscuro",
+"Mantener un único acento de color por jerarquía: cian claro (#54D6FF) para hover/highlight, cian medio (#17A8E5) para elementos interactivos base"
+]
+}

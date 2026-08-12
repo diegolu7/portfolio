@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
+import Projects from '../components/sections/Projects';
+import Services from '../components/sections/Services';
+import Testimonials from '../components/sections/Testimonials';
+import Contact from '../components/sections/Contact';
+---
+
+<BaseLayout>
+  <Hero client:load />
+  <About client:load />
+  <Projects client:load />
+  <Services client:load />
+  <Testimonials client:load />
+  <Contact client:load />
+</BaseLayout>
