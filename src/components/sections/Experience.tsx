@@ -42,7 +42,7 @@ export default function Experience() {
                         {job.period} · {job.location}
                       </p>
                     </div>
-                    <span className="rounded-md border border-white/15 bg-midnight-secondary px-3 py-1 text-xs font-medium text-text-muted">
+                    <span className="rounded-md border border-border-subtle/15 bg-midnight-secondary px-3 py-1 text-xs font-medium text-text-muted">
                       {job.period}
                     </span>
                   </div>
@@ -58,7 +58,7 @@ export default function Experience() {
                     ))}
                   </ul>
 
-                  <div className="mt-5 flex flex-wrap gap-2 border-t border-white/10 pt-4">
+                  <div className="mt-5 flex flex-wrap gap-2 border-t border-border-subtle/10 pt-4">
                     {job.stack.map((s) => (
                       <span key={s} className="badge !px-3 !py-1 !text-xs">
                         {s}

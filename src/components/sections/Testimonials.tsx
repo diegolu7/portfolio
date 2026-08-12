@@ -22,7 +22,7 @@ export default function Testimonials() {
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary-light">
               <Icon name="shield" className="h-4 w-4" /> Referencias verificadas
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-midnight-secondary px-4 py-1.5 text-sm font-medium text-text-muted">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border-subtle/10 bg-midnight-secondary px-4 py-1.5 text-sm font-medium text-text-muted">
               <Icon name="star" className="h-4 w-4 text-primary-light" /> Recomendados por líderes de equipo
             </span>
           </div>
@@ -43,9 +43,9 @@ export default function Testimonials() {
                 <p className="mt-4 flex-1 text-[15px] italic leading-relaxed text-text-muted">
                   “{t.quote}”
                 </p>
-                <div className="mt-6 flex items-center gap-4 border-t border-white/10 pt-5">
+                <div className="mt-6 flex items-center gap-4 border-t border-border-subtle/10 pt-5">
                   <span
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-sm font-bold text-midnight"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-sm font-bold text-on-accent"
                     style={{ background: `linear-gradient(135deg, ${t.color}, ${t.color}88)` }}
                   >
                     {t.initials}
@@ -72,7 +72,7 @@ export default function Testimonials() {
           <div className="p-6 sm:p-8">
             <div className="flex items-center gap-5">
               <span
-                className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full text-lg font-bold text-midnight"
+                className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full text-lg font-bold text-on-accent"
                 style={{ background: `linear-gradient(135deg, ${selected.color}, ${selected.color}88)` }}
               >
                 {selected.initials}

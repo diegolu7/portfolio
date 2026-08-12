@@ -96,7 +96,7 @@ export default function Hero() {
           className="relative mx-auto w-full max-w-md"
         >
           <div className="relative rounded-[14px] border border-primary/30 bg-midnight-secondary/85 p-6 shadow-lg backdrop-blur-[8px]">
-            <div className="flex items-center gap-2 border-b border-white/10 pb-4">
+            <div className="flex items-center gap-2 border-b border-border-subtle/10 pb-4">
               <span className="h-3 w-3 rounded-full bg-[#FF5F57]" />
               <span className="h-3 w-3 rounded-full bg-[#FEBC2E]" />
               <span className="h-3 w-3 rounded-full bg-[#28C840]" />

@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+  --page: 8 17 31;
+  --page-secondary: 16 28 46;
+  --card: 13 24 38;
+  --card-hover: 18 34 52;
+  --text-main: 244 248 252;
+  --text-muted: 155 170 189;
+  --text-dim: 124 140 160;
+  --border: 155 170 189;
+  --on-accent: 8 17 31;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --page: 244 248 252;
+  --page-secondary: 233 241 249;
+  --card: 255 255 255;
+  --card-hover: 240 246 252;
+  --text-main: 11 23 38;
+  --text-muted: 90 107 126;
+  --text-dim: 132 148 166;
+  --border: 11 23 38;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -10,7 +35,7 @@
     @apply bg-midnight text-text-light font-sans antialiased;
   }
   ::selection {
-    @apply bg-primary text-midnight;
+    @apply bg-primary text-on-accent;
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -34,19 +59,19 @@
     @apply py-16;
   }
   .card {
-    @apply rounded-lg border border-white/10 bg-midnight-card shadow-md transition-all duration-300;
+    @apply rounded-lg border border-border-subtle/10 bg-midnight-card shadow-md transition-all duration-300;
   }
   .card:hover {
     @apply -translate-y-1 border-primary/40 shadow-cardHover;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-[10px] bg-primary px-7 py-3.5 font-semibold text-midnight shadow-[0_4px_14px_rgba(23,168,229,0.35)] transition-all duration-200 hover:scale-[1.02] hover:bg-primary-light;
+    @apply inline-flex items-center justify-center gap-2 rounded-[10px] bg-primary px-7 py-3.5 font-semibold text-on-accent shadow-[0_4px_14px_rgba(23,168,229,0.35)] transition-all duration-200 hover:scale-[1.02] hover:bg-primary-light;
   }
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 rounded-[10px] border-[1.5px] border-primary bg-transparent px-7 py-3.5 font-semibold text-primary transition-all duration-200 hover:scale-[1.02] hover:bg-primary/10;
   }
   .badge {
-    @apply inline-flex items-center rounded-md border border-white/20 bg-midnight-secondary px-4 py-2 text-[13px] font-medium text-text-light transition-colors duration-200 hover:border-primary;
+    @apply inline-flex items-center rounded-md border border-border-subtle/20 bg-midnight-secondary px-4 py-2 text-[13px] font-medium text-text-light transition-colors duration-200 hover:border-primary;
   }
   .section-title {
     @apply text-2xl font-bold text-text-light;
@@ -56,5 +81,12 @@
   }
   .icon-circle {
     @apply flex h-12 w-12 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }

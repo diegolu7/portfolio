@@ -5,19 +5,21 @@ module.exports = {
     extend: {
       colors: {
         midnight: {
-          DEFAULT: '#08111F',
-          secondary: '#101C2E',
-          card: '#0D1826',
-          cardHover: '#122234',
+          DEFAULT: 'rgb(var(--page) / <alpha-value>)',
+          secondary: 'rgb(var(--page-secondary) / <alpha-value>)',
+          card: 'rgb(var(--card) / <alpha-value>)',
+          cardHover: 'rgb(var(--card-hover) / <alpha-value>)',
         },
+        text: {
+          light: 'rgb(var(--text-main) / <alpha-value>)',
+          muted: 'rgb(var(--text-muted) / <alpha-value>)',
+          dim: 'rgb(var(--text-dim) / <alpha-value>)',
+        },
+        'border-subtle': 'rgb(var(--border) / <alpha-value>)',
+        'on-accent': 'rgb(var(--on-accent) / <alpha-value>)',
         primary: {
           DEFAULT: '#17A8E5',
           light: '#54D6FF',
-        },
-        text: {
-          light: '#F4F8FC',
-          muted: '#9BAABD',
-          dim: '#7C8CA0',
         },
       },
       fontFamily: {

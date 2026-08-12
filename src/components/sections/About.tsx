@@ -30,7 +30,7 @@ export default function About() {
               </p>
 
               <div className="mt-8 grid gap-4">
-                <div className="flex items-start gap-4 rounded-[12px] border border-white/10 bg-midnight-secondary p-4">
+                <div className="flex items-start gap-4 rounded-[12px] border border-border-subtle/10 bg-midnight-secondary p-4">
                   <span className="icon-circle !h-11 !w-11 shrink-0">
                     <Icon name="briefcase" className="h-5 w-5" />
                   </span>
@@ -43,7 +43,7 @@ export default function About() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 rounded-[12px] border border-white/10 bg-midnight-secondary p-4">
+                <div className="flex items-start gap-4 rounded-[12px] border border-border-subtle/10 bg-midnight-secondary p-4">
                   <span className="icon-circle !h-11 !w-11 shrink-0">
                     <Icon name="graduation" className="h-5 w-5" />
                   </span>

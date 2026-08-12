@@ -74,7 +74,7 @@ export default function Contact() {
                       target={s.icon === 'mail' ? undefined : '_blank'}
                       rel="noopener noreferrer"
                       title={s.name}
-                      className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary transition-all duration-200 hover:scale-110 hover:bg-primary hover:text-midnight"
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary transition-all duration-200 hover:scale-110 hover:bg-primary hover:text-on-accent"
                     >
                       <Icon name={s.icon} className="h-5 w-5" />
                     </a>
@@ -100,7 +100,7 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange('name')}
                     placeholder="Tu nombre"
-                    className="w-full rounded-[8px] border border-white/15 bg-midnight-secondary px-4 py-3 text-sm text-text-light placeholder:text-text-dim focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                    className="w-full rounded-[8px] border border-border-subtle/15 bg-midnight-secondary px-4 py-3 text-sm text-text-light placeholder:text-text-dim focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 </div>
                 <div>
@@ -114,7 +114,7 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange('email')}
                     placeholder="tu@email.com"
-                    className="w-full rounded-[8px] border border-white/15 bg-midnight-secondary px-4 py-3 text-sm text-text-light placeholder:text-text-dim focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                    className="w-full rounded-[8px] border border-border-subtle/15 bg-midnight-secondary px-4 py-3 text-sm text-text-light placeholder:text-text-dim focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange('message')}
                   placeholder="Cuéntame sobre tu proyecto, objetivos y plazos…"
-                  className="w-full resize-none rounded-[8px] border border-white/15 bg-midnight-secondary px-4 py-3 text-sm text-text-light placeholder:text-text-dim focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                  className="w-full resize-none rounded-[8px] border border-border-subtle/15 bg-midnight-secondary px-4 py-3 text-sm text-text-light placeholder:text-text-dim focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                 />
               </div>
 

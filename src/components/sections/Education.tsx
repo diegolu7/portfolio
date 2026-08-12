@@ -36,7 +36,7 @@ export default function Education() {
               <Icon name="shield" className="h-5 w-5 text-primary-light" />
               Certificaciones destacadas
             </h3>
-            <span className="rounded-full border border-white/10 bg-midnight-secondary px-3 py-1 text-xs text-text-muted">
+            <span className="rounded-full border border-border-subtle/10 bg-midnight-secondary px-3 py-1 text-xs text-text-muted">
               {certifications.length} certificaciones
             </span>
           </div>

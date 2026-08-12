@@ -16,6 +16,22 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState('inicio');
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+
+  useEffect(() => {
+    setTheme(document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+  }, []);
+
+  const toggleTheme = () => {
+    const next: 'dark' | 'light' = theme === 'light' ? 'dark' : 'light';
+    setTheme(next);
+    document.documentElement.setAttribute('data-theme', next);
+    try {
+      localStorage.setItem('theme', next);
+    } catch {
+      /* sin almacenamiento */
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -42,7 +58,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 border-b transition-colors duration-300 ${
-        scrolled ? 'border-white/10 bg-midnight/85 backdrop-blur-md' : 'border-transparent'
+        scrolled ? 'border-border-subtle/10 bg-midnight/85 backdrop-blur-md' : 'border-transparent'
       }`}
     >
       <div className="container-page flex h-[70px] items-center justify-between">
@@ -50,7 +66,7 @@ export default function Navbar() {
           onClick={() => document.getElementById('inicio')?.scrollIntoView({ behavior: 'smooth' })}
           className="flex items-center gap-2 text-[18px] font-bold tracking-[0.5px] text-text-light"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-[8px] bg-primary text-midnight">
+          <span className="flex h-8 w-8 items-center justify-center rounded-[8px] bg-primary text-on-accent">
             <Icon name="terminal" className="h-4 w-4" />
           </span>
           DL<span className="text-primary-light">.dev</span>
@@ -84,10 +100,29 @@ export default function Navbar() {
           </a>
         </nav>
 
-        <button
-          className="flex h-10 w-10 items-center justify-center rounded-[8px] border border-white/20 bg-midnight-secondary text-text-light lg:hidden"
-          onClick={() => setOpen(!open)}
-          aria-label="Menú"
+        <div className="flex items-center gap-2">
+          <button
+            onClick={toggleTheme}
+            aria-label={theme === 'light' ? 'Activar modo oscuro' : 'Activar modo claro'}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-border-subtle/20 bg-midnight-secondary text-text-light transition-colors hover:border-primary hover:text-primary-light"
+          >
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.span
+                key={theme}
+                initial={{ opacity: 0, rotate: -90, scale: 0.6 }}
+                animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                exit={{ opacity: 0, rotate: 90, scale: 0.6 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Icon name={theme === 'light' ? 'moon' : 'sun'} className="h-5 w-5" />
+              </motion.span>
+            </AnimatePresence>
+          </button>
+
+          <button
+            className="flex h-10 w-10 items-center justify-center rounded-[8px] border border-border-subtle/20 bg-midnight-secondary text-text-light lg:hidden"
+            onClick={() => setOpen(!open)}
+            aria-label="Menú"
         >
           <span className="flex flex-col gap-1.5">
             <span
@@ -101,6 +136,7 @@ export default function Navbar() {
             />
           </span>
         </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -110,7 +146,7 @@ export default function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-white/10 bg-midnight lg:hidden"
+            className="overflow-hidden border-t border-border-subtle/10 bg-midnight lg:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {links.map((l) => (

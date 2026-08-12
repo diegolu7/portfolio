@@ -23,7 +23,7 @@ export default function Projects() {
             <Reveal key={p.id} delay={i * 0.08} className="h-full">
               <button
                 onClick={() => setSelected(p)}
-                className="group flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-white/10 bg-midnight-card text-left shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-cardHover"
+                className="group flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-border-subtle/10 bg-midnight-card text-left shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-cardHover"
               >
                 <div
                   className="relative flex aspect-[16/9] w-full items-center justify-center overflow-hidden rounded-t-lg"
@@ -60,7 +60,7 @@ export default function Projects() {
                     {p.stack.slice(0, 4).map((s) => (
                       <span
                         key={s}
-                        className="rounded-md border border-white/20 bg-midnight-secondary px-2.5 py-1 text-[11px] font-medium text-text-light"
+                        className="rounded-md border border-border-subtle/20 bg-midnight-secondary px-2.5 py-1 text-[11px] font-medium text-text-light"
                       >
                         {s}
                       </span>

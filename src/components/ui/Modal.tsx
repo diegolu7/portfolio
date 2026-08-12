@@ -50,7 +50,7 @@ export default function Modal({ open, onClose, children }: ModalProps) {
             <button
               aria-label="Cerrar"
               onClick={onClose}
-              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-midnight-secondary text-text-light transition-colors hover:border-primary hover:text-primary-light"
+              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border-subtle/20 bg-midnight-secondary text-text-light transition-colors hover:border-primary hover:text-primary-light"
             >
               <Icon name="close" className="h-5 w-5" />
             </button>

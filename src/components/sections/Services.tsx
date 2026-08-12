@@ -24,7 +24,7 @@ export default function Services() {
                   {s.title}
                 </h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-text-muted">{s.description}</p>
-                <ul className="mt-auto space-y-2 border-t border-white/10 pt-4 [&>li:first-child]:mt-4">
+                <ul className="mt-auto space-y-2 border-t border-border-subtle/10 pt-4 [&>li:first-child]:mt-4">
                   {s.items.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-[13px] text-text-muted">
                       <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-light" />
