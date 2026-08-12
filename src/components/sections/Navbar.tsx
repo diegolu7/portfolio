@@ -69,7 +69,7 @@ export default function Navbar() {
           <span className="flex h-8 w-8 items-center justify-center rounded-[8px] bg-primary text-on-accent">
             <Icon name="terminal" className="h-4 w-4" />
           </span>
-          DL<span className="text-primary-light">.dev</span>
+          DC<span className="text-primary-light">.dev</span>
         </button>
 
         <nav className="hidden items-center gap-8 lg:flex">
