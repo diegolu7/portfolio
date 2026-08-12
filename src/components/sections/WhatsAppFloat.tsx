@@ -2,7 +2,7 @@ import Icon from '../ui/Icon';
 import { profile } from '../../lib/data';
 
 export default function WhatsAppFloat() {
-  const text = encodeURIComponent('Hola Diego, quiero hacerte una consulta sobre un proyecto.');
+  const text = encodeURIComponent('Hola Diego, quiero hacerte una consulta');
   const href = `https://wa.me/${profile.whatsapp}?text=${text}`;
 
   return (
