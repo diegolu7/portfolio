@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import Icon from '../ui/Icon';
 import { profile } from '../../lib/data';
 
+const cvUrl = `${import.meta.env.BASE_URL}cv/Diego_Luis_Castro_CV_2026_Junio.pdf`;
+
 const container = {
   hidden: {},
   show: { transition: { staggerChildren: 0.12 } },
@@ -80,7 +82,7 @@ export default function Hero() {
               <Icon name="rocket" className="h-5 w-5" />
               Ver proyectos
             </a>
-            <a href="#contacto" className="btn-secondary">
+            <a href={cvUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary" download>
               <Icon name="download" className="h-5 w-5" />
               Descargar CV
             </a>
