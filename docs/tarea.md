@@ -100,7 +100,7 @@ El diseño visual seguirá las especificaciones definidas en el sistema de dise�
 
 ### 🎯 Hero
 
-- **Nombre:** Diego Luis Castro
+- **Nombre:** Diego Castro
 - **Título:** Desarrollador Web FullStack
 - **Tags:** PHP · WordPress · WooCommerce · Laravel · React.js · DevOps
 - **Ubicación:** Salta, Argentina

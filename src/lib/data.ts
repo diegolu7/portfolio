@@ -50,7 +50,7 @@ export interface Certification {
 }
 
 export const profile = {
-  name: 'Diego Luis Castro',
+  name: 'Diego Castro',
   title: 'Desarrollador Web FullStack',
   tagline:
     'Construyo soluciones web que combinan rendimiento, clean architecture y experiencia de usuario.',

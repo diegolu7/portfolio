@@ -1,6 +1,6 @@
-# 🚀 Mi Portafolio — Diego Luis Castro
+# 🚀 Mi Portafolio — Diego Castro
 
-Portafolio personal de **Diego Luis Castro, Desarrollador Web FullStack**, construido con **Astro + React + Tailwind CSS**. Es un sitio 100% estático con animaciones, modales interactivos y diseño responsive.
+Portafolio personal de **Diego Castro, Desarrollador Web FullStack**, construido con **Astro + React + Tailwind CSS**. Es un sitio 100% estático con animaciones, modales interactivos y diseño responsive.
 
 ## 🛠️ Stack Tecnológico
 

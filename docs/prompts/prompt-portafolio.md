@@ -45,7 +45,7 @@ Tema **Midnight Cyan** (dark mode, minimalista con acentos cian) según `docs/de
 
 ## 💾 Datos del Portfolio
 
-- **Nombre:** Diego Luis Castro
+- **Nombre:** Diego Castro
 - **Título:** Desarrollador Web FullStack
 - **Ubicación:** Salta, Argentina
 - **Email:** diegolu7@gmail.com · Tel: +54 9 3875640494
