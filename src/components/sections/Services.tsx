@@ -20,9 +20,11 @@ export default function Services() {
                 <span className="icon-circle transition-transform duration-300 group-hover:scale-110">
                   <Icon name={s.icon as never} className="h-6 w-6" />
                 </span>
-                <h3 className="mt-5 text-base font-bold text-text-light">{s.title}</h3>
+                <h3 className="mt-5 flex min-h-[48px] items-start text-base font-bold leading-snug text-text-light">
+                  {s.title}
+                </h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-text-muted">{s.description}</p>
-                <ul className="mt-5 space-y-2 border-t border-white/10 pt-4">
+                <ul className="mt-auto space-y-2 border-t border-white/10 pt-4 [&>li:first-child]:mt-4">
                   {s.items.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-[13px] text-text-muted">
                       <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-light" />
