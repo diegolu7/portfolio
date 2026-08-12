@@ -45,7 +45,7 @@ export default function Projects() {
                   )}
                   <span
                     className="absolute right-4 top-4 flex items-center gap-1 rounded-full border px-3 py-1 text-xs font-semibold text-text-light backdrop-blur-sm transition-transform group-hover:scale-105"
-                    style={{ borderColor: `${p.color}66`, background: 'rgba(16,28,46,0.85)' }}
+                    style={{ borderColor: `${p.color}66`, background: 'rgb(var(--page-secondary) / 0.85)' }}
                   >
                     <Icon name="external" className="h-3.5 w-3.5" />
                     Ver detalle
