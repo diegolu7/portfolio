@@ -42,24 +42,34 @@ export default function Education() {
           </div>
         </Reveal>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {certifications.map((c, i) => (
-            <Reveal key={`${c.title}-${c.issuer}`} delay={(i % 3) * 0.06}>
-              <div className="card flex h-full items-center gap-3 !p-4">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary-light">
-                  <Icon name="star" className="h-4 w-4" strokeWidth={2} />
-                </span>
-                <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-text-light" title={c.title}>
-                    {c.title}
-                  </p>
-                  <p className="truncate text-xs text-text-muted">
-                    {c.issuer} · <span className="text-primary-light">{c.year}</span>
-                  </p>
+        <div className="mt-6 group relative overflow-hidden py-2">
+          {/* Fade de bordes */}
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-midnight to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-midnight to-transparent" />
+
+          {/* Carrusel: items duplicados para loop infinito, se pausa al hacer hover */}
+          <div className="flex w-max animate-marquee gap-3 group-hover:[animation-play-state:paused]">
+            {[...certifications, ...certifications].map((c, i) => (
+              <div
+                key={`${c.title}-${c.issuer}-${i}`}
+                className="card h-full w-[280px] shrink-0 items-center gap-3 !p-4"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary-light">
+                    <Icon name="star" className="h-4 w-4" strokeWidth={2} />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold text-text-light" title={c.title}>
+                      {c.title}
+                    </p>
+                    <p className="truncate text-xs text-text-muted">
+                      {c.issuer} · <span className="text-primary-light">{c.year}</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </Reveal>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

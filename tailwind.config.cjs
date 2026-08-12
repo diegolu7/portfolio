@@ -48,10 +48,15 @@ module.exports = {
           '0%, 100%': { opacity: '0.5' },
           '50%': { opacity: '1' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
         pulseGlow: 'pulseGlow 4s ease-in-out infinite',
+        marquee: 'marquee 45s linear infinite',
       },
     },
   },
