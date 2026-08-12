@@ -90,3 +90,7 @@
     display: none;
   }
 }
+
+[data-theme='light'] .btn-primary {
+  color: #ffffff;
+}
