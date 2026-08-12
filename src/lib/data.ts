@@ -135,7 +135,7 @@ export const experience: ExperienceEntry[] = [
     id: 'minimalart',
     role: 'Developer / FullStack Developer',
     company: 'Minimalart',
-    period: 'Ago 2022 — Ago 2025',
+    period: 'Actualidad — Ago 2025',
     location: 'Remoto · Salta / CABA',
     summary:
       'Desarrollo y mantenimiento de soluciones para marcas como Arcor en Casa, Saphirus, Issuecolor y DirectConnectionTravel.',
@@ -151,7 +151,7 @@ export const experience: ExperienceEntry[] = [
     id: 'freelance',
     role: 'Desarrollador FullStack Freelance',
     company: 'Independiente',
-    period: 'Ene 2020 — Ago 2022',
+    period: 'Ene 2020 — Actualidad',
     location: 'Salta, Argentina',
     summary:
       'Desarrollo de soluciones web para clientes de distintos rubros con foco en e-commerce y presencia digital.',
