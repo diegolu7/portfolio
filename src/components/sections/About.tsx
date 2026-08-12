@@ -64,11 +64,11 @@ export default function About() {
 
           <div>
             <Reveal>
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3">
+              <div className="no-scrollbar -mx-1 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0 sm:pb-0 lg:grid-cols-3">
                 {stats.map((s) => (
                   <div
                     key={s.label}
-                    className="card flex flex-col items-center justify-center !p-5 text-center"
+                    className="card flex w-[46%] shrink-0 snap-center flex-col items-center justify-center !p-5 text-center sm:w-auto sm:shrink sm:snap-none"
                   >
                     <p className="text-3xl font-extrabold text-primary-light">{s.value}</p>
                     <p className="mt-1 text-xs text-text-muted">{s.label}</p>
@@ -77,12 +77,14 @@ export default function About() {
               </div>
             </Reveal>
 
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="no-scrollbar -mx-1 mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto px-1 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:px-0 sm:pb-0">
               {skills.map((cat, i) => (
                 <Reveal
                   key={cat.category}
                   delay={i * 0.08}
-                  className={i % 2 !== 0 ? 'sm:translate-y-6' : ''}
+                  className={`w-[80%] shrink-0 snap-center sm:w-auto sm:shrink sm:snap-none ${
+                    i % 2 !== 0 ? 'sm:translate-y-6' : ''
+                  }`}
                 >
                   <div className="card h-full !p-6">
                     <h4 className="flex items-center gap-2 text-base font-bold text-text-light">

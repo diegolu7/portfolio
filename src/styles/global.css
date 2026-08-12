@@ -57,4 +57,11 @@
   .icon-circle {
     @apply flex h-12 w-12 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary;
   }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
