@@ -14,9 +14,9 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`[Contacto] ${form.name}`);
-    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+    const message = `Hola Diego, soy ${form.name}.\n\n${form.message}\n\nRespuesta a: ${form.email}`;
+    const url = `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
     setSent(true);
     setForm({ name: '', email: '', message: '' });
   };
@@ -24,7 +24,6 @@ export default function Contact() {
   const socials = [
     { name: 'LinkedIn', href: profile.linkedin, icon: 'linkedin' as const },
     { name: 'GitHub', href: profile.github, icon: 'github' as const },
-    { name: 'Twitter', href: profile.twitter, icon: 'twitter' as const },
     { name: 'Email', href: `mailto:${profile.email}`, icon: 'mail' as const },
   ];
 
@@ -136,12 +135,12 @@ export default function Contact() {
 
               <button type="submit" className="btn-primary w-full sm:w-auto">
                 <Icon name="send" className="h-5 w-5" />
-                Enviar mensaje
+                Enviar por WhatsApp
               </button>
 
               {sent && (
                 <p className="rounded-[8px] border border-primary/40 bg-primary/10 px-4 py-3 text-sm text-primary-light">
-                  ¡Gracias! Se abrió tu cliente de correo con el mensaje listo para enviar.
+                  ¡Gracias! Se abrió WhatsApp con tu mensaje listo para enviar.
                 </p>
               )}
             </form>

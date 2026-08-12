@@ -39,9 +39,9 @@ export const profile = {
   location: 'Salta, Argentina',
   email: 'diegolu7@gmail.com',
   phone: '+54 9 3875640494',
+  whatsapp: '5493875640494',
   linkedin: 'https://linkedin.com/in/diegolu7',
   github: 'https://github.com/diegolu7',
-  twitter: 'https://twitter.com/diegolu7',
   experienceYears: '+5',
   education: [
     'Tecnicatura Teclab (por finalizar)',
