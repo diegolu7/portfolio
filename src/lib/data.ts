@@ -110,6 +110,18 @@ export const projects: Project[] = [
     demo: undefined,
   },
   {
+    id: 'saphirus-ecommerce',
+    name: 'Saphirus E-commerce',
+    tagline: 'Tienda online con plugins WooCommerce a medida.',
+    description:
+      'Desarrollo y soporte del e-commerce de Saphirus en el ecosistema Minimart. Implementación de plugins WooCommerce a medida que automatizan procesos de venta, integran sistemas de pago y mejoran la conversión del checkout.',
+    stack: ['WordPress', 'WooCommerce', 'Plugins a medida', 'PHP', 'APIs REST'],
+    color: '#54D6FF',
+    icon: 'plug',
+    repo: 'https://github.com/diegolu7',
+    demo: undefined,
+  },
+  {
     id: 'plugins-woocommerce',
     name: 'Plugins WooCommerce a medida',
     tagline: 'Extensiones custom integradas con APIs REST.',
