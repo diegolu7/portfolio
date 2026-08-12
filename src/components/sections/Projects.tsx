@@ -53,8 +53,10 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-1 flex-col p-[18px]">
                   <h3 className="text-base font-bold text-text-light">{p.name}</h3>
-                  <p className="mt-1.5 text-[13px] leading-relaxed text-text-muted">{p.tagline}</p>
-                  <div className="mt-4 flex flex-wrap content-end gap-2">
+                  <p className="mt-1.5 line-clamp-2 min-h-[42px] text-[13px] leading-relaxed text-text-muted">
+                    {p.tagline}
+                  </p>
+                  <div className="mt-auto flex flex-wrap gap-2 pt-4">
                     {p.stack.slice(0, 4).map((s) => (
                       <span
                         key={s}
