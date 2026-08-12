@@ -118,7 +118,7 @@ export const experience: ExperienceEntry[] = [
     id: 'cfvpraxis',
     role: 'Desarrollador FullStack PHP / WordPress / Laravel',
     company: 'CFV Praxis',
-    period: 'Mar 2026 — Actualidad',
+    period: 'Feb 2026 — Actualidad',
     location: 'Remoto · Salta, Argentina',
     current: true,
     summary:
