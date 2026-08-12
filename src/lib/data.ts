@@ -75,6 +75,10 @@ export const skills = [
     items: ['AWS', 'Docker', 'Nginx', 'CI/CD', 'Metabase'],
   },
   {
+    category: 'Inteligencia Artificial',
+    items: ['opencode', 'ChatGPT', 'Codex', 'Copilot', 'IA aplicada al desarrollo'],
+  },
+  {
     category: 'Especialidades',
     items: ['E-commerce', 'Plataformas educativas', 'Dashboards', 'Integraciones API'],
   },
