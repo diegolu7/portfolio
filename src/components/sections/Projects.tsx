@@ -20,10 +20,10 @@ export default function Projects() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
-            <Reveal key={p.id} delay={i * 0.08}>
+            <Reveal key={p.id} delay={i * 0.08} className="h-full">
               <button
                 onClick={() => setSelected(p)}
-                className="group block w-full cursor-pointer overflow-hidden rounded-lg border border-white/10 bg-midnight-card text-left shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-cardHover"
+                className="group flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-white/10 bg-midnight-card text-left shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-cardHover"
               >
                 <div
                   className="relative flex aspect-[16/9] w-full items-center justify-center overflow-hidden rounded-t-lg"
@@ -51,10 +51,10 @@ export default function Projects() {
                     Ver detalle
                   </span>
                 </div>
-                <div className="p-[18px]">
+                <div className="flex flex-1 flex-col p-[18px]">
                   <h3 className="text-base font-bold text-text-light">{p.name}</h3>
                   <p className="mt-1.5 text-[13px] leading-relaxed text-text-muted">{p.tagline}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                  <div className="mt-4 flex flex-wrap content-end gap-2">
                     {p.stack.slice(0, 4).map((s) => (
                       <span
                         key={s}
